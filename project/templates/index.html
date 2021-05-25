@@ -1,0 +1,11 @@
+{% extends 'base.html' %} 
+
+{% if user.is_authenticated %} 
+<div class="container">
+    Hello {{user.username}}
+</div>
+{% else %} 
+<div class="container">
+    You need to log in pls <a href="{% url 'login' %}">Log in here.</a>
+</div>
+{% endif %}
