@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+<div class="is-flex is-justify-content-center">
+    <form method="post">
+        {{form.as_p}}
+        <button type="submit">Log in</button>
+    </form>
+</div>
+{% endblock %} 
